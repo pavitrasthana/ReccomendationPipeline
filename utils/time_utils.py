@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jul  8 19:47:44 2026
+
+@author: pavit
+"""
+
+from datetime import datetime
+
+def get_date():
+    return datetime.now().strftime("%Y-%m-%d")
+
+def get_timestamp() -> str:
+    return datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
