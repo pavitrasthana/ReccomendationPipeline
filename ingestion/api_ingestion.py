@@ -64,4 +64,19 @@ class APIIngestion:
             """
             )
 
-        return pd.DataFrame(data)
+        df = pd.DataFrame(data)
+
+        metadata = {
+
+                "source": "FakeStore API",
+
+                "status": "SUCCESS",
+
+                "rows": len(df),
+
+                "columns": len(df.columns),
+
+                "file": str(output_file)
+                }
+
+        return df, metadata

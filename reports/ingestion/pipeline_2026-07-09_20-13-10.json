@@ -1,0 +1,22 @@
+{
+    "pipeline_run_id": "673dda49-fc62-4ae4-94ce-3bd97705ab42",
+    "pipeline_name": "RecommendationPipeline",
+    "timestamp": "2026-07-09_20-13-10",
+    "status": "SUCCESS",
+    "sources": [
+        {
+            "source": "Amazon CSV",
+            "status": "SUCCESS",
+            "rows": 1597,
+            "columns": 27,
+            "file": "D:\\DataEngineering\\MTech\\DML\\Assignment1\\ReccomendationPipeline\\data\\raw\\amazon\\amazon_reviews.csv"
+        },
+        {
+            "source": "FakeStore API",
+            "status": "SUCCESS",
+            "rows": 20,
+            "columns": 7,
+            "file": "D:\\DataEngineering\\MTech\\DML\\Assignment1\\ReccomendationPipeline\\data\\raw\\api\\2026-07-09\\2026-07-09_20-13-11.json"
+        }
+    ]
+}

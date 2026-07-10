@@ -36,4 +36,16 @@ class CSVIngestion:
 
         logger.info("CSV ingestion completed successfully.")
 
-        return df
+        metadata = {
+        
+            "source": "Amazon CSV",
+        
+            "status": "SUCCESS",
+        
+            "rows": len(df),
+        
+            "columns": len(df.columns),
+        
+            "file": str(self.csv_path)
+        }
+        return df, metadata

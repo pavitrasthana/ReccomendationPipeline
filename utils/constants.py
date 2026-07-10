@@ -19,6 +19,8 @@ RAW_API_DIR = RAW_DATA_DIR / "api"
 PROCESSED_DIR = DATA_DIR / "processed"
 VALIDATED_DIR = DATA_DIR / "validated"
 FEATURE_DIR = DATA_DIR / "features"
+REPORT_DIR = PROJECT_ROOT/"reports"
+INGESTION_REPORT_DIR = REPORT_DIR/"ingestion"
 
 
 
