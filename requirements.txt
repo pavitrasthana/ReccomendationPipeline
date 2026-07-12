@@ -16,3 +16,4 @@ dvc
 fastapi
 uvicorn
 loguru
+great-expectations

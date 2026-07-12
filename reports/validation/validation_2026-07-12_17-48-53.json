@@ -1,0 +1,430 @@
+{
+    "report_timestamp": "2026-07-12_17-48-53",
+    "dataset_profile": {
+        "rows": 1597,
+        "columns": 27,
+        "memory_usage_mb": 18.35,
+        "duplicate_count": 0,
+        "duplicate_percentage": 0.0,
+        "missing_values": {
+            "id": 0,
+            "asins": 0,
+            "brand": 0,
+            "categories": 0,
+            "colors": 823,
+            "dateAdded": 0,
+            "dateUpdated": 0,
+            "dimension": 1032,
+            "ean": 699,
+            "keys": 0,
+            "manufacturer": 632,
+            "manufacturerNumber": 695,
+            "name": 0,
+            "prices": 0,
+            "reviews.date": 380,
+            "reviews.doRecommend": 1058,
+            "reviews.numHelpful": 697,
+            "reviews.rating": 420,
+            "reviews.sourceURLs": 0,
+            "reviews.text": 0,
+            "reviews.title": 17,
+            "reviews.userCity": 1597,
+            "reviews.userProvince": 1597,
+            "reviews.username": 17,
+            "sizes": 1597,
+            "upc": 699,
+            "weight": 911
+        },
+        "missing_percentage": {
+            "id": 0.0,
+            "asins": 0.0,
+            "brand": 0.0,
+            "categories": 0.0,
+            "colors": 51.53,
+            "dateAdded": 0.0,
+            "dateUpdated": 0.0,
+            "dimension": 64.62,
+            "ean": 43.77,
+            "keys": 0.0,
+            "manufacturer": 39.57,
+            "manufacturerNumber": 43.52,
+            "name": 0.0,
+            "prices": 0.0,
+            "reviews.date": 23.79,
+            "reviews.doRecommend": 66.25,
+            "reviews.numHelpful": 43.64,
+            "reviews.rating": 26.3,
+            "reviews.sourceURLs": 0.0,
+            "reviews.text": 0.0,
+            "reviews.title": 1.06,
+            "reviews.userCity": 100.0,
+            "reviews.userProvince": 100.0,
+            "reviews.username": 1.06,
+            "sizes": 100.0,
+            "upc": 43.77,
+            "weight": 57.04
+        },
+        "unique_values": {
+            "id": 66,
+            "asins": 54,
+            "brand": 2,
+            "categories": 19,
+            "colors": 3,
+            "dateAdded": 50,
+            "dateUpdated": 42,
+            "dimension": 2,
+            "ean": 2,
+            "keys": 66,
+            "manufacturer": 2,
+            "manufacturerNumber": 6,
+            "name": 62,
+            "prices": 66,
+            "reviews.date": 382,
+            "reviews.doRecommend": 2,
+            "reviews.numHelpful": 182,
+            "reviews.rating": 5,
+            "reviews.sourceURLs": 499,
+            "reviews.text": 1048,
+            "reviews.title": 1270,
+            "reviews.userCity": 0,
+            "reviews.userProvince": 0,
+            "reviews.username": 949,
+            "sizes": 0,
+            "upc": 2,
+            "weight": 9
+        },
+        "data_types": {
+            "id": "object",
+            "asins": "object",
+            "brand": "object",
+            "categories": "object",
+            "colors": "object",
+            "dateAdded": "object",
+            "dateUpdated": "object",
+            "dimension": "object",
+            "ean": "float64",
+            "keys": "object",
+            "manufacturer": "object",
+            "manufacturerNumber": "object",
+            "name": "object",
+            "prices": "object",
+            "reviews.date": "object",
+            "reviews.doRecommend": "object",
+            "reviews.numHelpful": "float64",
+            "reviews.rating": "float64",
+            "reviews.sourceURLs": "object",
+            "reviews.text": "object",
+            "reviews.title": "object",
+            "reviews.userCity": "float64",
+            "reviews.userProvince": "float64",
+            "reviews.username": "object",
+            "sizes": "float64",
+            "upc": "float64",
+            "weight": "object"
+        },
+        "column_names": [
+            "id",
+            "asins",
+            "brand",
+            "categories",
+            "colors",
+            "dateAdded",
+            "dateUpdated",
+            "dimension",
+            "ean",
+            "keys",
+            "manufacturer",
+            "manufacturerNumber",
+            "name",
+            "prices",
+            "reviews.date",
+            "reviews.doRecommend",
+            "reviews.numHelpful",
+            "reviews.rating",
+            "reviews.sourceURLs",
+            "reviews.text",
+            "reviews.title",
+            "reviews.userCity",
+            "reviews.userProvince",
+            "reviews.username",
+            "sizes",
+            "upc",
+            "weight"
+        ]
+    },
+    "validation_summary": {
+        "overall_status": "WARNING",
+        "total_rules": 5,
+        "passed_rules": 4,
+        "warning_rules": 1,
+        "failed_rules": 0,
+        "results": [
+            {
+                "rule": "Duplicate Check",
+                "status": "PASS",
+                "severity": "INFO",
+                "message": "No duplicate rows found",
+                "details": {
+                    "duplicated_count": 0
+                }
+            },
+            {
+                "rule": "Required Columns",
+                "status": "PASS",
+                "severity": "INFO",
+                "message": "All required columns exist.",
+                "details": {}
+            },
+            {
+                "rule": "Missing Values",
+                "status": "WARNING",
+                "severity": "WARNING",
+                "message": "Missing values detected.",
+                "details": {
+                    "reviews.rating": 420,
+                    "reviews.username": 17
+                }
+            },
+            {
+                "rule": "Rating Range",
+                "status": "PASS",
+                "severity": "INFO",
+                "message": "Ratings within range.",
+                "details": {}
+            },
+            {
+                "rule": "Data Types",
+                "status": "PASS",
+                "severity": "INFO",
+                "message": "All data types valid.",
+                "details": {}
+            }
+        ]
+    },
+    "great expectations": {
+        "success": false,
+        "results": [
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_to_exist",
+                    "kwargs": {
+                        "column": "id",
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {},
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            },
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_to_exist",
+                    "kwargs": {
+                        "column": "name",
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {},
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            },
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_to_exist",
+                    "kwargs": {
+                        "column": "brand",
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {},
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            },
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_to_exist",
+                    "kwargs": {
+                        "column": "categories",
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {},
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            },
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_to_exist",
+                    "kwargs": {
+                        "column": "prices",
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {},
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            },
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_to_exist",
+                    "kwargs": {
+                        "column": "reviews.rating",
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {},
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            },
+            {
+                "success": false,
+                "expectation_config": {
+                    "expectation_type": "expect_column_values_to_not_be_null",
+                    "kwargs": {
+                        "column": "reviews.rating",
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {
+                    "element_count": 1597,
+                    "unexpected_count": 420,
+                    "unexpected_percent": 26.29931120851597,
+                    "unexpected_percent_total": 26.29931120851597,
+                    "partial_unexpected_list": []
+                },
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            },
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_values_to_be_between",
+                    "kwargs": {
+                        "column": "reviews.rating",
+                        "min_value": 1,
+                        "max_value": 5,
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {
+                    "element_count": 1597,
+                    "missing_count": 420,
+                    "missing_percent": 26.29931120851597,
+                    "unexpected_count": 0,
+                    "unexpected_percent": 0.0,
+                    "unexpected_percent_total": 0.0,
+                    "unexpected_percent_nonmissing": 0.0,
+                    "partial_unexpected_list": []
+                },
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            },
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_to_exist",
+                    "kwargs": {
+                        "column": "reviews.username",
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {},
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            },
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_to_exist",
+                    "kwargs": {
+                        "column": "reviews.text",
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {},
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            }
+        ],
+        "evaluation_parameters": {},
+        "statistics": {
+            "evaluated_expectations": 10,
+            "successful_expectations": 9,
+            "unsuccessful_expectations": 1,
+            "success_percent": 90.0
+        },
+        "meta": {
+            "great_expectations_version": "0.18.8",
+            "expectation_suite_name": "default",
+            "run_id": {
+                "run_name": null,
+                "run_time": "2026-07-12T17:48:53.982975+05:30"
+            },
+            "batch_kwargs": {
+                "ge_batch_id": "d93059f5-7deb-11f1-9a36-3c9c0f192d3b"
+            },
+            "batch_markers": {},
+            "batch_parameters": {},
+            "validation_time": "20260712T121853.982932Z",
+            "expectation_suite_meta": {
+                "great_expectations_version": "0.18.8"
+            }
+        }
+    }
+}
