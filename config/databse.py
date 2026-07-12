@@ -1,12 +1,19 @@
-# -*- coding: utf-8 -*-
 """
-Created on Wed Jul  8 15:57:42 2026
+Database configuration.
 
-@author: pavit
+Creates and exposes the shared SQLAlchemy engine
+used throughout the project.
 """
 
 from sqlalchemy import create_engine
-from config.config import *
+
+from config.config import (
+    POSTGRES_USER,
+    POSTGRES_PASSWORD,
+    POSTGRES_HOST,
+    POSTGRES_PORT,
+    POSTGRES_DB
+)
 
 DATABASE_URL = (
     f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}"
