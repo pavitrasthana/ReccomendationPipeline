@@ -21,6 +21,7 @@ VALIDATED_DIR = DATA_DIR / "validated"
 FEATURE_DIR = DATA_DIR / "features"
 REPORT_DIR = PROJECT_ROOT/"reports"
 INGESTION_REPORT_DIR = REPORT_DIR/"ingestion"
+VALIDATION_REPORT_DIR = REPORT_DIR / "validation"
 
 
 
