@@ -1,0 +1,367 @@
+{
+    "report_timestamp": "2026-07-12_19-44-40",
+    "dataset_profile": {
+        "rows": 20,
+        "columns": 8,
+        "memory_usage_mb": 0.01,
+        "duplicate_count": 0,
+        "duplicate_percentage": 0.0,
+        "missing_values": {
+            "id": 0,
+            "title": 0,
+            "price": 0,
+            "description": 0,
+            "category": 0,
+            "image": 0,
+            "rating.rate": 0,
+            "rating.count": 0
+        },
+        "missing_percentage": {
+            "id": 0.0,
+            "title": 0.0,
+            "price": 0.0,
+            "description": 0.0,
+            "category": 0.0,
+            "image": 0.0,
+            "rating.rate": 0.0,
+            "rating.count": 0.0
+        },
+        "unique_values": {
+            "id": 20,
+            "title": 20,
+            "price": 19,
+            "description": 20,
+            "category": 4,
+            "image": 20,
+            "rating.rate": 15,
+            "rating.count": 18
+        },
+        "data_types": {
+            "id": "int64",
+            "title": "object",
+            "price": "float64",
+            "description": "object",
+            "category": "object",
+            "image": "object",
+            "rating.rate": "float64",
+            "rating.count": "int64"
+        },
+        "column_names": [
+            "id",
+            "title",
+            "price",
+            "description",
+            "category",
+            "image",
+            "rating.rate",
+            "rating.count"
+        ]
+    },
+    "validation_summary": {
+        "overall_status": "PASS",
+        "total_rules": 6,
+        "passed_rules": 6,
+        "warning_rules": 0,
+        "failed_rules": 0,
+        "results": [
+            {
+                "rule": "Duplicate Product IDs",
+                "status": "PASS",
+                "severity": "INFO",
+                "message": "No duplicate product IDs found.",
+                "details": {
+                    "duplicate_count": 0
+                }
+            },
+            {
+                "rule": "Required Columns",
+                "status": "PASS",
+                "severity": "INFO",
+                "message": "All required columns exist.",
+                "details": {}
+            },
+            {
+                "rule": "Missing Values",
+                "status": "PASS",
+                "severity": "INFO",
+                "message": "No missing values found.",
+                "details": {}
+            },
+            {
+                "rule": "Price Validation",
+                "status": "PASS",
+                "severity": "INFO",
+                "message": "All prices are valid.",
+                "details": {}
+            },
+            {
+                "rule": "Rating Validation",
+                "status": "PASS",
+                "severity": "INFO",
+                "message": "Ratings are within range.",
+                "details": {}
+            },
+            {
+                "rule": "Data Types",
+                "status": "PASS",
+                "severity": "INFO",
+                "message": "All data types are valid.",
+                "details": {}
+            }
+        ]
+    },
+    "great expectations": {
+        "success": true,
+        "results": [
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_to_exist",
+                    "kwargs": {
+                        "column": "id",
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {},
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            },
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_values_to_not_be_null",
+                    "kwargs": {
+                        "column": "id",
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {
+                    "element_count": 20,
+                    "unexpected_count": 0,
+                    "unexpected_percent": 0.0,
+                    "unexpected_percent_total": 0.0,
+                    "partial_unexpected_list": []
+                },
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            },
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_to_exist",
+                    "kwargs": {
+                        "column": "title",
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {},
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            },
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_to_exist",
+                    "kwargs": {
+                        "column": "price",
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {},
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            },
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_values_to_be_between",
+                    "kwargs": {
+                        "column": "price",
+                        "min_value": 0,
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {
+                    "element_count": 20,
+                    "missing_count": 0,
+                    "missing_percent": 0.0,
+                    "unexpected_count": 0,
+                    "unexpected_percent": 0.0,
+                    "unexpected_percent_total": 0.0,
+                    "unexpected_percent_nonmissing": 0.0,
+                    "partial_unexpected_list": []
+                },
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            },
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_to_exist",
+                    "kwargs": {
+                        "column": "description",
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {},
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            },
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_to_exist",
+                    "kwargs": {
+                        "column": "category",
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {},
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            },
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_to_exist",
+                    "kwargs": {
+                        "column": "image",
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {},
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            },
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_to_exist",
+                    "kwargs": {
+                        "column": "rating.rate",
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {},
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            },
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_values_to_be_between",
+                    "kwargs": {
+                        "column": "rating.rate",
+                        "min_value": 0,
+                        "max_value": 5,
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {
+                    "element_count": 20,
+                    "missing_count": 0,
+                    "missing_percent": 0.0,
+                    "unexpected_count": 0,
+                    "unexpected_percent": 0.0,
+                    "unexpected_percent_total": 0.0,
+                    "unexpected_percent_nonmissing": 0.0,
+                    "partial_unexpected_list": []
+                },
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            },
+            {
+                "success": true,
+                "expectation_config": {
+                    "expectation_type": "expect_column_to_exist",
+                    "kwargs": {
+                        "column": "rating.count",
+                        "result_format": "BASIC"
+                    },
+                    "meta": {}
+                },
+                "result": {},
+                "meta": {},
+                "exception_info": {
+                    "raised_exception": false,
+                    "exception_message": null,
+                    "exception_traceback": null
+                }
+            }
+        ],
+        "evaluation_parameters": {},
+        "statistics": {
+            "evaluated_expectations": 11,
+            "successful_expectations": 11,
+            "unsuccessful_expectations": 0,
+            "success_percent": 100.0
+        },
+        "meta": {
+            "great_expectations_version": "0.18.8",
+            "expectation_suite_name": "default",
+            "run_id": {
+                "run_name": null,
+                "run_time": "2026-07-12T19:44:40.620209+05:30"
+            },
+            "batch_kwargs": {
+                "ge_batch_id": "05b498c5-7dfc-11f1-9f54-3c9c0f192d3b"
+            },
+            "batch_markers": {},
+            "batch_parameters": {},
+            "validation_time": "20260712T141440.619991Z",
+            "expectation_suite_meta": {
+                "great_expectations_version": "0.18.8"
+            }
+        }
+    }
+}
