@@ -12,6 +12,7 @@ from utils.constants import RAW_AMAZON_DIR
 from validation.profiler import DataProfiler
 from validation.validator import DataValidator
 from validation.quality_report import QualityReportGenerator
+from validation.ge_validator import GEValidator
 
 
 class ValidationManager:
@@ -22,9 +23,11 @@ class ValidationManager:
         profile = DataProfiler.profile(df)
         validator = DataValidator()
         summary = validator.validate(df)
+        ge_result =  GEValidator.validate(df)
         report = QualityReportGenerator.generate(
             profile,
-            summary
+            summary,
+            ge_result
         )
         print(f"Validation report generated:\n{report}")
         return profile, summary
