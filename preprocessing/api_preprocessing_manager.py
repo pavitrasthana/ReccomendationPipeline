@@ -3,6 +3,8 @@ Preprocessing manager for FakeStore API.
 """
 
 import json
+from datetime import datetime, timezone
+
 import pandas as pd
 
 from utils.api_utils import get_latest_api_file
@@ -60,6 +62,16 @@ class APIPreprocessingManager:
         )
 
         processed_df, summary = engine.process(df)
+
+        # --------------------------------------------
+        # Add ingestion timestamp
+        # --------------------------------------------
+
+        ingestion_time = datetime.now(timezone.utc)
+
+        processed_df["ingestion_timestamp"] = (
+            ingestion_time
+        )
 
         # --------------------------------------------
         # Save processed dataset
