@@ -1,0 +1,20 @@
+{
+    "report_timestamp": "2026-07-13_17-15-33",
+    "feature_summary": {
+        "rows_before": 1177,
+        "rows_after": 1177,
+        "columns_before": 24,
+        "columns_after": 32,
+        "features_created": [
+            "reviews.text_length",
+            "reviews.title_length",
+            "reviews.text_word_count",
+            "reviews.title_word_count",
+            "user_review_count",
+            "user_average_rating",
+            "product_review_count",
+            "product_average_rating"
+        ],
+        "output_file": "D:\\DataEngineering\\MTech\\DML\\Assignment1\\ReccomendationPipeline\\data\\features\\amazon\\amazon_features.parquet"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "report_timestamp": "2026-07-13_18-56-38",
+    "database_summary": {
+        "source_file": "amazon_reviews_processed.csv",
+        "target_table": "amazon_reviews",
+        "rows_loaded": 1177,
+        "columns_loaded": 24,
+        "load_status": "SUCCESS",
+        "output_database": "recommendation_db"
+    }
+}

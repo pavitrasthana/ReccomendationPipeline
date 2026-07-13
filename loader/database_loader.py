@@ -20,15 +20,8 @@ from models.database_summary import DatabaseSummary
 
 
 class DatabaseLoader:
-    """
-    Generic PostgreSQL database loader.
-    """
 
     def __init__(self):
-        """
-        Initialize the database loader using
-        the shared SQLAlchemy engine.
-        """
 
         self.engine = engine
 
@@ -38,10 +31,11 @@ class DatabaseLoader:
         table_name: str,
         source_file: str
     ) -> DatabaseSummary:
-        """
-        Load a dataframe into PostgreSQL.
-        """
 
+        import sqlalchemy
+        from sqlalchemy.engine import Engine
+
+        
         dataframe.to_sql(
             name=table_name,
             con=self.engine,
@@ -62,8 +56,5 @@ class DatabaseLoader:
         return summary
 
     def close(self):
-        """
-        Dispose the shared database engine.
-        """
 
         self.engine.dispose()
