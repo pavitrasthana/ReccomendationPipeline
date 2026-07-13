@@ -40,25 +40,21 @@ class FeatureRetriever:
     # Inference
     # =====================================================
 
-    def get_inference_features(
-        self,
-        dataset: str,
-        entity_id: int
-    ) -> pd.DataFrame:
+    def get_inference_features(self,dataset: str,entity_id: int) -> pd.DataFrame:
         """
         Retrieve features for a single entity.
         """
-
+    
         df = self.store.get_inference_features(
             dataset
         )
-
+    
         if "id" not in df.columns:
-
+    
             raise KeyError(
                 "'id' column not found in feature dataset."
             )
-
+    
         return df[
             df["id"] == entity_id
         ]

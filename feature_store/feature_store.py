@@ -135,38 +135,35 @@ class FeatureStore:
     # Inference Features
     # =====================================================
 
-    def get_inference_features(
-        self,
-        dataset: str
-    ) -> pd.DataFrame:
-        """
-        Returns all features available for inference.
-        """
+    def get_inference_features(self,dataset: str) -> pd.DataFrame:
 
-        df = self.load_dataset_features(
-            dataset
-        )
-
+        df = self.load_dataset_features(dataset)
+    
         allowed_features = [
-
             feature.feature_name
-
-            for feature in self.registry.get_dataset_features(
-                dataset
-            )
-
+            for feature in self.registry.get_dataset_features(dataset)
             if feature.available_for_inference
-
         ]
-
+    
+        # Preserve entity identifier
+        if dataset.lower() == "api":
+            identifier = "id"
+        elif dataset.lower() == "amazon":
+            identifier = "name"   # or reviewerID / asin depending on your design
+        else:
+            identifier = None
+    
         columns = []
-
-        for column in df.columns:
-
-            if column in allowed_features:
-
-                columns.append(column)
-
+    
+        if identifier in df.columns:
+            columns.append(identifier)
+    
+        columns.extend(
+            column
+            for column in df.columns
+            if column in allowed_features
+        )
+    
         return df[columns]
 
 
