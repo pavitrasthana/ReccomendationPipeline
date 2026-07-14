@@ -1,0 +1,76 @@
+================================================================================
+DATA VERSIONING & LINEAGE REPORT
+================================================================================
+
+Record 1
+----------------------------------------
+Dataset              : Amazon Reviews
+Stage                : Raw
+Source               : CSV
+Input                : Amazon Reviews Dataset
+Output               : D:\DataEngineering\MTech\DML\Assignment1\ReccomendationPipeline\data\raw\amazon
+Transformation       : CSV Ingestion
+Version              : 1.0
+Ingestion Timestamp  : 2026-07-14 11:39:36
+Generated Timestamp  : 2026-07-14 11:39:36
+
+Record 2
+----------------------------------------
+Dataset              : FakeStore Products
+Stage                : Raw
+Source               : REST API
+Input                : https://fakestoreapi.com/products
+Output               : D:\DataEngineering\MTech\DML\Assignment1\ReccomendationPipeline\data\raw\api
+Transformation       : API Ingestion
+Version              : 1.0
+Ingestion Timestamp  : 2026-07-14 11:39:36
+Generated Timestamp  : 2026-07-14 11:39:36
+
+Record 3
+----------------------------------------
+Dataset              : Amazon Processed
+Stage                : Processed
+Source               : Preprocessing
+Input                : D:\DataEngineering\MTech\DML\Assignment1\ReccomendationPipeline\data\raw\amazon
+Output               : D:\DataEngineering\MTech\DML\Assignment1\ReccomendationPipeline\data\processed\amazon
+Transformation       : Cleaning + Missing Values + Encoding
+Version              : 1.0
+Ingestion Timestamp  : 2026-07-14 11:39:36
+Generated Timestamp  : 2026-07-14 11:39:36
+
+Record 4
+----------------------------------------
+Dataset              : API Processed
+Stage                : Processed
+Source               : Preprocessing
+Input                : D:\DataEngineering\MTech\DML\Assignment1\ReccomendationPipeline\data\raw\api
+Output               : D:\DataEngineering\MTech\DML\Assignment1\ReccomendationPipeline\data\processed\api
+Transformation       : Cleaning + Missing Values
+Version              : 1.0
+Ingestion Timestamp  : 2026-07-14 11:39:36
+Generated Timestamp  : 2026-07-14 11:39:36
+
+Record 5
+----------------------------------------
+Dataset              : Amazon Features
+Stage                : Feature
+Source               : Feature Engineering
+Input                : D:\DataEngineering\MTech\DML\Assignment1\ReccomendationPipeline\data\processed\amazon
+Output               : D:\DataEngineering\MTech\DML\Assignment1\ReccomendationPipeline\data\features\amazon
+Transformation       : Feature Engineering
+Version              : 1.0
+Ingestion Timestamp  : 2026-07-14 11:39:36
+Generated Timestamp  : 2026-07-14 11:39:36
+
+Record 6
+----------------------------------------
+Dataset              : API Features
+Stage                : Feature
+Source               : Feature Engineering
+Input                : D:\DataEngineering\MTech\DML\Assignment1\ReccomendationPipeline\data\processed\api
+Output               : D:\DataEngineering\MTech\DML\Assignment1\ReccomendationPipeline\data\features\api
+Transformation       : Feature Engineering
+Version              : 1.0
+Ingestion Timestamp  : 2026-07-14 11:39:36
+Generated Timestamp  : 2026-07-14 11:39:36
+

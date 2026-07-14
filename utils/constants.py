@@ -41,6 +41,12 @@ DATABASE_REPORT_DIR = REPORT_DIR / "database"
 AMAZON_DATABASE_REPORT_DIR = DATABASE_REPORT_DIR / "amazon"
 API_DATABASE_REPORT_DIR = DATABASE_REPORT_DIR / "api"
 
+# -------------------------------------------------------
+# Models
+# -------------------------------------------------------
+
+MODELS_DIR = PROJECT_ROOT / "artifacts" / "models"
+
 #Logs
 LOG_DIR = PROJECT_ROOT / "logs"
 
