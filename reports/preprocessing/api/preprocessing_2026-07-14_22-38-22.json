@@ -1,0 +1,16 @@
+{
+    "report_timestamp": "2026-07-14_22-38-22",
+    "preprocessing_summary": {
+        "rows_before": 20,
+        "rows_after": 20,
+        "duplicates_removed": 0,
+        "missing_rows_removed": 0,
+        "columns_removed": [],
+        "processed_columns": [
+            "title",
+            "description",
+            "category"
+        ],
+        "output_file": "D:\\DataEngineering\\MTech\\DML\\Assignment1\\ReccomendationPipeline\\data\\processed\\api\\products_processed.csv"
+    }
+}

@@ -10,12 +10,10 @@ matplotlib
 seaborn
 mlflow
 feast
-apache-airflow
 jupyter
 dvc
 fastapi
 uvicorn
 loguru
-great-expectations
-feast
 scikit-surprise
+prefect

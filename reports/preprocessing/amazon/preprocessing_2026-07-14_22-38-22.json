@@ -1,0 +1,22 @@
+{
+    "report_timestamp": "2026-07-14_22-38-22",
+    "preprocessing_summary": {
+        "rows_before": 1597,
+        "rows_after": 1177,
+        "duplicates_removed": 0,
+        "missing_rows_removed": 420,
+        "columns_removed": [
+            "reviews.userCity",
+            "reviews.userProvince",
+            "sizes"
+        ],
+        "processed_columns": [
+            "reviews.text",
+            "reviews.title",
+            "reviews.username",
+            "brand",
+            "name"
+        ],
+        "output_file": "D:\\DataEngineering\\MTech\\DML\\Assignment1\\ReccomendationPipeline\\data\\processed\\amazon\\amazon_reviews_processed.csv"
+    }
+}
