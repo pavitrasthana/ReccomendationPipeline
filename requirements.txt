@@ -17,3 +17,5 @@ fastapi
 uvicorn
 loguru
 great-expectations
+feast
+scikit-surprise

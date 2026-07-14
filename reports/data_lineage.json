@@ -1,0 +1,24 @@
+[
+    {
+        "dataset_name": "Amazon Reviews",
+        "dataset_stage": "Raw",
+        "data_source": "CSV",
+        "input_location": "raw_data/amazon",
+        "output_location": "processed_data/amazon",
+        "transformation": "CSV Ingestion",
+        "version": "1.0",
+        "ingestion_timestamp": "2026-07-14 11:36:29",
+        "generated_timestamp": "2026-07-14 11:36:29"
+    },
+    {
+        "dataset_name": "Amazon Reviews",
+        "dataset_stage": "Processed",
+        "data_source": "CSV",
+        "input_location": "processed_data/amazon",
+        "output_location": "features/amazon",
+        "transformation": "Preprocessing",
+        "version": "1.0",
+        "ingestion_timestamp": "2026-07-14 11:36:29",
+        "generated_timestamp": "2026-07-14 11:36:29"
+    }
+]

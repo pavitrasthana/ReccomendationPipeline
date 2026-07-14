@@ -1,0 +1,68 @@
+[
+    {
+        "dataset_name": "Amazon Reviews",
+        "dataset_stage": "Raw",
+        "data_source": "CSV",
+        "input_location": "Amazon Reviews Dataset",
+        "output_location": "D:\\DataEngineering\\MTech\\DML\\Assignment1\\ReccomendationPipeline\\data\\raw\\amazon",
+        "transformation": "CSV Ingestion",
+        "version": "1.0",
+        "ingestion_timestamp": "2026-07-14 11:39:36",
+        "generated_timestamp": "2026-07-14 11:39:36"
+    },
+    {
+        "dataset_name": "FakeStore Products",
+        "dataset_stage": "Raw",
+        "data_source": "REST API",
+        "input_location": "https://fakestoreapi.com/products",
+        "output_location": "D:\\DataEngineering\\MTech\\DML\\Assignment1\\ReccomendationPipeline\\data\\raw\\api",
+        "transformation": "API Ingestion",
+        "version": "1.0",
+        "ingestion_timestamp": "2026-07-14 11:39:36",
+        "generated_timestamp": "2026-07-14 11:39:36"
+    },
+    {
+        "dataset_name": "Amazon Processed",
+        "dataset_stage": "Processed",
+        "data_source": "Preprocessing",
+        "input_location": "D:\\DataEngineering\\MTech\\DML\\Assignment1\\ReccomendationPipeline\\data\\raw\\amazon",
+        "output_location": "D:\\DataEngineering\\MTech\\DML\\Assignment1\\ReccomendationPipeline\\data\\processed\\amazon",
+        "transformation": "Cleaning + Missing Values + Encoding",
+        "version": "1.0",
+        "ingestion_timestamp": "2026-07-14 11:39:36",
+        "generated_timestamp": "2026-07-14 11:39:36"
+    },
+    {
+        "dataset_name": "API Processed",
+        "dataset_stage": "Processed",
+        "data_source": "Preprocessing",
+        "input_location": "D:\\DataEngineering\\MTech\\DML\\Assignment1\\ReccomendationPipeline\\data\\raw\\api",
+        "output_location": "D:\\DataEngineering\\MTech\\DML\\Assignment1\\ReccomendationPipeline\\data\\processed\\api",
+        "transformation": "Cleaning + Missing Values",
+        "version": "1.0",
+        "ingestion_timestamp": "2026-07-14 11:39:36",
+        "generated_timestamp": "2026-07-14 11:39:36"
+    },
+    {
+        "dataset_name": "Amazon Features",
+        "dataset_stage": "Feature",
+        "data_source": "Feature Engineering",
+        "input_location": "D:\\DataEngineering\\MTech\\DML\\Assignment1\\ReccomendationPipeline\\data\\processed\\amazon",
+        "output_location": "D:\\DataEngineering\\MTech\\DML\\Assignment1\\ReccomendationPipeline\\data\\features\\amazon",
+        "transformation": "Feature Engineering",
+        "version": "1.0",
+        "ingestion_timestamp": "2026-07-14 11:39:36",
+        "generated_timestamp": "2026-07-14 11:39:36"
+    },
+    {
+        "dataset_name": "API Features",
+        "dataset_stage": "Feature",
+        "data_source": "Feature Engineering",
+        "input_location": "D:\\DataEngineering\\MTech\\DML\\Assignment1\\ReccomendationPipeline\\data\\processed\\api",
+        "output_location": "D:\\DataEngineering\\MTech\\DML\\Assignment1\\ReccomendationPipeline\\data\\features\\api",
+        "transformation": "Feature Engineering",
+        "version": "1.0",
+        "ingestion_timestamp": "2026-07-14 11:39:36",
+        "generated_timestamp": "2026-07-14 11:39:36"
+    }
+]
