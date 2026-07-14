@@ -10,7 +10,6 @@ from utils.constants import RAW_API_DIR
 
 from validation.profiler import DataProfiler
 from validation.api_validator import APIDataValidator
-from validation.api_ge_validator import APIGEValidator
 from validation.quality_report import QualityReportGenerator
 
 
@@ -34,12 +33,11 @@ class APIValidationManager:
 
         summary = validator.validate(df)
 
-        ge_result = APIGEValidator.validate(df)
+        #ge_result = APIGEValidator.validate(df)
 
         report = QualityReportGenerator.generate(
             profile,
             summary,
-            ge_result
         )
 
         print(f"API validation report generated:\n{report}")

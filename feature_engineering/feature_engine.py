@@ -128,11 +128,17 @@ class FeatureEngine:
                     self.config.PRODUCT_COLUMN,
                     self.config.RATING_COLUMN
                 )
-
+                df = FeatureBuilder.add_product_unique_user_count(
+                    df,
+                    self.config.PRODUCT_COLUMN,
+                    self.config.USER_COLUMN
+                )
+                #features_created.append("product_unique_user_count")
                 features_created.extend(
                     [
                         "product_review_count",
-                        "product_average_rating"
+                        "product_average_rating",
+                        "product_unique_user_count"
                     ]
                 )
 

@@ -1,0 +1,113 @@
+{
+    "report_timestamp": "2026-07-14_22-37-41",
+    "dataset_profile": {
+        "rows": 20,
+        "columns": 8,
+        "memory_usage_mb": 0.01,
+        "duplicate_count": 0,
+        "duplicate_percentage": 0.0,
+        "missing_values": {
+            "id": 0,
+            "title": 0,
+            "price": 0,
+            "description": 0,
+            "category": 0,
+            "image": 0,
+            "rating.rate": 0,
+            "rating.count": 0
+        },
+        "missing_percentage": {
+            "id": 0.0,
+            "title": 0.0,
+            "price": 0.0,
+            "description": 0.0,
+            "category": 0.0,
+            "image": 0.0,
+            "rating.rate": 0.0,
+            "rating.count": 0.0
+        },
+        "unique_values": {
+            "id": 20,
+            "title": 20,
+            "price": 19,
+            "description": 20,
+            "category": 4,
+            "image": 20,
+            "rating.rate": 15,
+            "rating.count": 18
+        },
+        "data_types": {
+            "id": "int64",
+            "title": "object",
+            "price": "float64",
+            "description": "object",
+            "category": "object",
+            "image": "object",
+            "rating.rate": "float64",
+            "rating.count": "int64"
+        },
+        "column_names": [
+            "id",
+            "title",
+            "price",
+            "description",
+            "category",
+            "image",
+            "rating.rate",
+            "rating.count"
+        ]
+    },
+    "validation_summary": {
+        "overall_status": "PASS",
+        "total_rules": 6,
+        "passed_rules": 6,
+        "warning_rules": 0,
+        "failed_rules": 0,
+        "results": [
+            {
+                "rule": "Duplicate Product IDs",
+                "status": "PASS",
+                "severity": "INFO",
+                "message": "No duplicate product IDs found.",
+                "details": {
+                    "duplicate_count": 0
+                }
+            },
+            {
+                "rule": "Required Columns",
+                "status": "PASS",
+                "severity": "INFO",
+                "message": "All required columns exist.",
+                "details": {}
+            },
+            {
+                "rule": "Missing Values",
+                "status": "PASS",
+                "severity": "INFO",
+                "message": "No missing values found.",
+                "details": {}
+            },
+            {
+                "rule": "Price Validation",
+                "status": "PASS",
+                "severity": "INFO",
+                "message": "All prices are valid.",
+                "details": {}
+            },
+            {
+                "rule": "Rating Validation",
+                "status": "PASS",
+                "severity": "INFO",
+                "message": "Ratings are within range.",
+                "details": {}
+            },
+            {
+                "rule": "Data Types",
+                "status": "PASS",
+                "severity": "INFO",
+                "message": "All data types are valid.",
+                "details": {}
+            }
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "report_timestamp": "2026-07-13_18-56-39",
+    "database_summary": {
+        "source_file": "amazon_features.parquet",
+        "target_table": "amazon_features",
+        "rows_loaded": 1177,
+        "columns_loaded": 32,
+        "load_status": "SUCCESS",
+        "output_database": "recommendation_db"
+    }
+}

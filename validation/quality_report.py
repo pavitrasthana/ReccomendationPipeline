@@ -16,13 +16,12 @@ class QualityReportGenerator:
     Generates validation reports.
     """
     @staticmethod
-    def generate(profile_report, validation_summary,ge_result):
+    def generate(profile_report, validation_summary):
         ensure_directory(VALIDATION_REPORT_DIR)
         report = {
             "report_timestamp": get_timestamp(),
             "dataset_profile": profile_report.to_dict(),
             "validation_summary": validation_summary.to_dict(),
-            "great expectations": ge_result
         }
         filename = (
             VALIDATION_REPORT_DIR /

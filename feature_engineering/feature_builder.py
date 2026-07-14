@@ -187,3 +187,26 @@ class FeatureBuilder:
         )
 
         return df
+    
+    @staticmethod
+    def add_product_unique_user_count(
+        df: pd.DataFrame,
+        product_column: str,
+        user_column: str
+    ) -> pd.DataFrame:
+        """
+        Number of unique users who reviewed each product.
+        """
+    
+        if (
+            product_column not in df.columns or
+            user_column not in df.columns
+        ):
+            return df
+    
+        df["product_unique_user_count"] = (
+            df.groupby(product_column)[user_column]
+            .transform("nunique")
+        )
+    
+        return df

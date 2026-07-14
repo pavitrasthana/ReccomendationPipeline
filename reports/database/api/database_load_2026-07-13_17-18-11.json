@@ -1,0 +1,11 @@
+{
+    "report_timestamp": "2026-07-13_17-18-11",
+    "database_summary": {
+        "source_file": "products_features.parquet",
+        "target_table": "product_features",
+        "rows_loaded": 20,
+        "columns_loaded": 14,
+        "load_status": "SUCCESS",
+        "output_database": "recommendation_db"
+    }
+}

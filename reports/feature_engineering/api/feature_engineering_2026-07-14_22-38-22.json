@@ -1,0 +1,18 @@
+{
+    "report_timestamp": "2026-07-14_22-38-22",
+    "feature_summary": {
+        "rows_before": 20,
+        "rows_after": 20,
+        "columns_before": 9,
+        "columns_after": 15,
+        "features_created": [
+            "title_length",
+            "description_length",
+            "title_word_count",
+            "description_word_count",
+            "price_bucket",
+            "product_popularity"
+        ],
+        "output_file": "D:\\DataEngineering\\MTech\\DML\\Assignment1\\ReccomendationPipeline\\data\\features\\api\\products_features.parquet"
+    }
+}

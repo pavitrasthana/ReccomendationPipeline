@@ -1,0 +1,16 @@
+================================================================================
+DATA VERSIONING & LINEAGE REPORT
+================================================================================
+
+Record 1
+----------------------------------------
+Dataset              : Amazon Reviews
+Stage                : Raw
+Source               : CSV
+Input                : raw_data/amazon
+Output               : processed_data/amazon
+Transformation       : CSV Ingestion
+Version              : 1.0
+Ingestion Timestamp  : 2026-07-14 11:36:38
+Generated Timestamp  : 2026-07-14 11:36:38
+

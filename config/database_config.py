@@ -10,9 +10,9 @@ AMAZON_PROCESSED_TABLE = "amazon_reviews"
 
 AMAZON_FEATURE_TABLE = "amazon_features"
 
-API_PROCESSED_TABLE = "products"
+API_PROCESSED_TABLE = "api_products"
 
-API_FEATURE_TABLE = "product_features"
+API_FEATURE_TABLE = "api_product_features"
 
 # =====================================================
 # Loading Strategy
